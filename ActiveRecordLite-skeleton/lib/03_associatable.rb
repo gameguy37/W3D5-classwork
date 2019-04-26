@@ -29,7 +29,6 @@ class BelongsToOptions < AssocOptions
     }
 
     defaults.keys.each do |key|
-      # debugger
       self.send("#{key}=", options[key] || defaults[key])
     end
 
